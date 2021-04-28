@@ -7,7 +7,11 @@
       "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
       "args": ["${relativeFile}"],
       "cwd": "${workspaceRoot}",
-      "protocol": "inspector"
+      "protocol": "inspector",
+      "resolveSourceMapLocations": [
+          "${workspaceFolder}/**",
+          "!**/node_modules/**"
+      ]
       }
-  ]
+  ],
 }
