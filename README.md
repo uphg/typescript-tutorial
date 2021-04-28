@@ -58,3 +58,18 @@ function add(a, b):any {
 console.log(add('1', '2'))
 console.log(add(1, 2))
 ```
+
+## 枚举
+
+```typescript
+enum Gender {
+  Male,
+  Female
+}
+
+function fallLove(a: Gender, b: Gender): [Gender, Gender] {
+  return [a, b]
+}
+
+console.log(fallLove(Gender.Male, Gender.Female)) // [0, 1]
+```
