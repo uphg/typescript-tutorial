@@ -42,3 +42,19 @@ const result = min(1, 2)
 
 console.log(result)
 ```
+
+## 函数重载
+
+使用函数重载，可以让函数支持多种情况的类型判断
+
+```typescript
+
+function add(a:string, b:string): string;
+function add(a:number, b:number): number;
+function add(a, b):any {
+  return a + b
+}
+
+console.log(add('1', '2'))
+console.log(add(1, 2))
+```

@@ -1,7 +1,9 @@
-function min(a:number, b:number): number {
-  return a > b ? b : a
+
+function add(a:string, b:string): string;
+function add(a:number, b:number): number;
+function add(a, b):any {
+  return a + b
 }
 
-const result = min(1, 2)
-
-console.log(result)
+console.log(add('1', '2'))
+console.log(add(1, 2))
