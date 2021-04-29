@@ -73,3 +73,12 @@ function fallLove(a: Gender, b: Gender): [Gender, Gender] {
 
 console.log(fallLove(Gender.Male, Gender.Female)) // [0, 1]
 ```
+
+## 运行 ts 脚本
+
+想要运行 ts 脚本，需要在首行加入如下内容
+
+```sh
+#!/usr/bin/env ts-node
+console.log('hello world')
+```
